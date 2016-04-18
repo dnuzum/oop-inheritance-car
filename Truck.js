@@ -5,7 +5,7 @@ function Truck(make, model, year, color, seats, capacity) {
 	Car.call(this, make, model, year, color, seats);
 	this.capacity = capacity || 0;
 	this.cargo = 0;
-	this.seat = 3;
+	this.seats = 3;
 	
 	
 };

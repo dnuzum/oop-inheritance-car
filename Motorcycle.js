@@ -5,7 +5,7 @@ function Motorcycle(make, model, year, color, seats, passengers){
 	Car.call(this, make, model, year, color, seats, passengers);
 	if (this.seats > 2) {
 		console.log("Motorcycles cannot have more than two seats!")
-		return false
+		this.seats = 2;
 	} else {
 		return true;
 	}
@@ -17,8 +17,9 @@ Motorcycle.prototype.wheelie = function(){
 	if (this.running){
 		return true;
 		console.log("Doing a sick wheelie!!");
-	} else
+	} else {
 	return false;
+	}
 }
 
 var triumph = new Motorcycle("Triumph", "675R", "2014", "White", 1);
